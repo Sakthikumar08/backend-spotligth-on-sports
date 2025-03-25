@@ -5,7 +5,7 @@ mongoose.set('strictPopulate', false);
 
 const connectDB = async () => {
   try {
-    const conn = await mongoose.connect(process.env.MONGO_URI||"mongodb://localhost:27017/sportsapp", {
+    const conn = await mongoose.connect(process.env.MONGO_URI||"mongodb+srv://SakthiKumar:dbsakthi2004@cluster0.rbara.mongodb.net/mydatabase?retryWrites=true&w=majority&appName=Cluster0", {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
